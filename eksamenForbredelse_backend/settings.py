@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'recipes',
     'corsheaders',
+    'django_filters',
 ]
 
 MIDDLEWARE = [
@@ -55,6 +56,10 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'corsheaders.middleware.CorsMiddleware',
 ]
+
+REST_FRAMEWORK = {
+    'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend',]
+}
 
 ROOT_URLCONF = 'eksamenForbredelse_backend.urls'
 
