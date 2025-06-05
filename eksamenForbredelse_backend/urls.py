@@ -18,9 +18,11 @@ from django.contrib import admin
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
 from recipes.views import RecipeViewSet
+from mealplans.views import MealplanViewSet
 
 router = DefaultRouter()
 router.register(r'recipes', RecipeViewSet)
+router.register(r'mealplans', MealplanViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
