@@ -10,4 +10,4 @@ class RecipeViewSet(viewsets.ModelViewSet):
     serializer_class = RecipeSerializer
     filter_backends = [DjangoFilterBackend, SearchFilter]
     filterset_class = RecipeFilter
-    search_fields = ['title', 'category', 'flavor_profiles']  # keep search for text if desired
+    search_fields = ['title', 'category', 'flavor_profiles']
