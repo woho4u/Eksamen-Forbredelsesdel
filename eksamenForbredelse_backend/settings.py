@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'recipes',
     'corsheaders',
     'django_filters',
+    'mealplans',
 ]
 
 MIDDLEWARE = [
